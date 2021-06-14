@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body class="bg-light">
+    <div class="container" style="background-color: white">
+      <div class="row py-5 justify-content-center">
+        <!-- <div class="col-md-8"> -->
+        <div *ngIf="isLoggedin === false" style="background-color: white">
+          <h1 class="text-center py-4">Login in the User's App</h1>
+          <br /><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- <button
+            type="button"
+            (click)="loginWithGoogle()"
+            class="btn btn-primary"
+          >
+            Sign In With Google
+          </button> -->
+
+          <div class="row" style="text-align: center">
+            <div class="col-md-6">
+              <a
+                class="btn btn-outline-dark"
+                (click)="loginWithGoogle()"
+                role="button"
+                style="text-transform: none"
+              >
+                <img
+                  width="20px"
+                  style="margin-bottom: 3px; margin-right: 5px"
+                  alt="Google sign-in"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+                />
+                Login with Google
+              </a>
+              <!-- <button
+                class="loginBtn loginBtn--facebook"
+                (click)="signInWithFB()"
+              >
+                Login with Facebook
+              </button> -->
+            </div>
+            <div class="col-md-9" style="text-align: center">
+              <button
+                class="loginBtn loginBtn--facebook"
+                (click)="signInWithFB()"
+              >
+                Login with Facebook
+              </button>
+            </div>
+            <div class="col-md-19" style="text-align: center">
+              <button
+                class="loginBtn loginBtn--facebook"
+                (click)="signInWithFB()"
+              >
+                Login with Facebook
+              </button>
+            </div>
+            <!-- <div class="row mt-5">
+
+            </div> -->
+          </div>
+          <br /><br />
+        </div>
+        <div *ngIf="isLoggedin === true">
+          <app-home></app-home>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="container" style="max-width: 550px"> -->
+
+<!-- <div *ngIf="isLoggedin === false">
+  <div>
+    <button type="button" (click)="loginWithGoogle()" class="btn btn-danger">
+      Login with Google
+    </button>
+  </div>
+</div> -->
+
+<!-- </div> -->
