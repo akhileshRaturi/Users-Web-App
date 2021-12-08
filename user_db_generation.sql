@@ -7,7 +7,7 @@ CREATE SCHEMA `user`;
 USE `user` ;
 
 -- -----------------------------------------------------
--- Table `todo-app`.`task`
+-- Table `user-app`.`task`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `user`.`user` (
   `id` int auto_increment,
